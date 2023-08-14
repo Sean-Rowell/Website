@@ -1,0 +1,68 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+	color: #3D3D3D;
+	background-color: #ECE9E1;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+	color: #ECE9E1;
+    background-color: #3D3D3D;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.about, .experience, .education, .contact {
+    margin: 20px;
+}
+
+h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* Add more CSS for styling as needed */
+
+/* Style for the top email link */
+.top-email {
+    color: #ECE9E1; /* Set the desired text color for the link */
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+.top-email:hover {
+    text-decoration: underline; /* Add underline on hover for user feedback */
+}
+
+/* Style for the bottom email link */
+.bottom-email {
+    color: #3D3D3D; /* Set the desired text color for the link */
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+.bottom-email:hover {
+    text-decoration: underline; /* Add underline on hover for user feedback */
+}
+
+
