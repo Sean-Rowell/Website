@@ -55,7 +55,20 @@ $(window).on("load", function() {
     });
 });
 
+//Download Resume Button Listeners
+document.addEventListener("DOMContentLoaded", function() {
+  const downloadButtons = document.querySelectorAll(".download-resume");
 
+  downloadButtons.forEach(button => {
+      button.addEventListener("click", () => {
+          const pdfURL = "assets/2-3 Goals and Users.pdf"; // Replace with the actual path to your PDF file
+          const link = document.createElement("a");
+          link.href = pdfURL;
+          link.download = "Sean Rowell - Resume.pdf"; // Set the desired filename for the downloaded PDF
+          link.click();
+      });
+  });
+});
 // google maps
 function initMap() {
 // Styles a map in night mode.
