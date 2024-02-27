@@ -73,6 +73,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Opens Resume PDF in a new tab
 
+//Send a message functionality
+
+const sendMessageButton = document.getElementById('sendMessageButton');
+
+var url = "https://script.google.com/macros/s/AKfycbxraEcfPNbCYifek4qEQohIxvU6odNXJLlL_hnsURYNUbizsQRgjE-PIGRkEXFSv08/exec";
+
+function sendMessage(){
+  var messageInfo = document.getElementsByClassName("form-control");
+  var m_name = document.getElementById("m_name");
+  var m_email = document.getElementById("m_email");
+  var m_message = document.getElementById("m_message");
+  var full_message = "You have a new message from: ";
+  fetch(url + "?q=" + JSON.stringify([
+    "sxrowell@yahoo.com",
+    "Website: New Message",
+    full_message
+  ])).then(() => {
+    // here you can let the user know their contact was received
+    console.log("output");
+    console.log(m_name);
+    console.log(m_email);
+    console.log(m_message);
+    console.log(messageInfo);
+  });
+}
+
 
 // google maps
 function initMap() {
