@@ -1,0 +1,80 @@
+/* Reset body margins */
+body {
+    margin: 0;
+    height: 100vh; /* Make sure body takes up the full viewport height */
+    background-color: beige;
+}
+
+textarea { 
+    resize: none; 
+}
+
+/* Text area in the top right corner */
+.highScoreArea {
+    position: absolute;
+    top: 10px;              /* Distance from the top */
+    right: 10px;            /* Distance from the right edge */
+    width: 300px;           /* Set width for the text area */
+    height: 100px;          /* Set height for the text area */
+    resize: none !important;           /* Disable resizing */
+
+    font-size: 25px;
+    text-align: right;
+}
+
+/* Text area in the top middle */
+.displayArea {
+    position: absolute;
+    top: 60px;
+    left: 50%;              /* Position relative to the middle of the page */
+    transform: translateX(-50%); /* Center the text area horizontally */
+    width: 300px;
+    height: 100px;
+    resize: none;           /* Disable resizing */
+    font-size: 25px;
+    text-align: center;
+}
+
+.titleArea {
+    position: absolute;
+    top: 10px;              /* Distance from the top */
+    left: 10px;            /* Distance from the left edge */
+    width: 400px;           /* Set width for the text area */
+    height: 200px;          /* Set height for the text area */
+    resize: none !important;           /* Disable resizing */
+
+    font-size: 125px;
+    text-align: left;
+}
+
+/* Center container for the button */
+.center-container {
+    display: flex;          /* Enable Flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;    /* Vertically center the content */
+    height: 100vh;          /* Full height of the viewport */
+    position: relative;
+
+    
+}
+
+/* Center button */
+.ClickButton {
+    width: 450px;           /* Width of the button (make it a large circle) */
+    height: 450px;          /* Height of the button (equal to width for the circle) */
+    background-color: #a91c1c;  /* Red background */
+    border: none;           /* No border */
+    border-radius: 50%;     /* Make it a perfect circle */
+    color: white;           /* White text color */
+    font-size: 16px;        /* Font size */
+    text-align: center;     /* Center the text inside the button */
+    cursor: pointer;        /* Show pointer cursor on hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;    /* Center text vertically and horizontally */
+}
+
+.bg-t{
+    background-color:  transparent;
+    border-color: transparent;
+}
