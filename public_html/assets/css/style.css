@@ -11638,6 +11638,15 @@ pre .code {
   padding: 40px 0;
 }
 
+.contact-background {
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/MountainBackgroud.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/MountainBackgroud.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 @media (max-width: 991.98px) {
   .contact {
     padding: 300px 0 0;
